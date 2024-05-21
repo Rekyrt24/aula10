@@ -41,7 +41,7 @@ class DatabaseHelper {
     // Método assíncrono para inserir uma tarefa no banco de dados
     final db = await database; // Obtém o banco de dados
     return await db.insert(
-        'tasks', tarefa.toMap()); // Insere a tarefa na tabela 'tasks'
+        'tarefa', tarefa.toMap()); // Insere a tarefa na tabela 'tasks'
   }
 
   Future<List<Tarefa>> fetchTasks() async {
